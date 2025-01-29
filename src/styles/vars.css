@@ -1,0 +1,16 @@
+:root {
+    /* FONT*/
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /* COLORS */
+
+        /* BACKGROUND */
+        --bg-color-gray: #121212;
+        --bg-color-light-gray: #242424;
+        --bg-icon: #131313;
+        --bg-arrow-color: rgba(0, 0, 0.7);
+
+        /* TEXT */
+        --text-color-gray: #b3b3b3;
+    
+}

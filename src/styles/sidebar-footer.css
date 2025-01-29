@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -11,6 +11,7 @@ body {
     
     padding: 12px;
     width: 300px;
+    max-width: 20vw;
 }
 
 .sidebar nav ul li{
@@ -18,7 +19,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--text-color-gray);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -27,14 +28,14 @@ body {
 .sidebar .sidebar__navigation {
     border-radius: 8px;
     padding: 20px;
-    background-color: #121212;
+    background-color: var(--bg-color-gray);
 }
 
 .sidebar .sidebar__navigation .logo {
     display: flex;
     border-radius: 8px;
     padding: 0 0 10px 0;
-    background-color: #121212;
+    background-color: var(--bg-color-gray);
 }
 
 .sidebar .library{
@@ -47,8 +48,8 @@ body {
     margin-top: 10px;
     padding: 10px 0;
 
-    background-color: #121212;
-    color: #b3b3b3;
+    background-color: var(--bg-color-gray);
+    color: var(--text-color-gray);
     font-weight: 600;
     font-size: 14px;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .library .library__button {
-    color: #b3b3b3;
+    color: var(--text-color-gray);
     background-color: transparent;
     font-size: 14px;
     font-weight: 700;
@@ -76,7 +77,7 @@ body {
 
     padding: 20px;
 
-    background-color: #242424;
+    background-color: var(--bg-color-light-gray);
     color: white;
 }
 
@@ -114,7 +115,7 @@ body {
 }
 
 .library .cookies a {
-    color: #b3b3b3;
+    color: var(--text-color-gray);
     font-size: 10px;
     font-weight: 500;
     text-decoration: none;
