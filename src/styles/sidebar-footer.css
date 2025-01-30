@@ -10,8 +10,8 @@ body {
     bottom: 0px;
     
     padding: 12px;
-    width: 300px;
-    max-width: 20vw;
+    width: 20vw;
+    min-width: 250px;
 }
 
 .sidebar nav ul li{
@@ -146,6 +146,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    height: 5vh;
     padding: 20px 30px;
 
     background: linear-gradient(100deg, rgba(9,9,121,1), rgba(141,0,255,1), rgba(9,9,121,1));

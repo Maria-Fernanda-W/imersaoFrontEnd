@@ -1,0 +1,9 @@
+@media screen and (max-width: 1015px) {
+    .offer__list-item {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+}
