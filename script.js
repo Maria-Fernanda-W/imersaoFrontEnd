@@ -11,8 +11,9 @@ function requestApi(searchTerm) {
 
 function displayResults(result, searchTerm ) {
     resultPlaylist.classList.add('hidden');
-    const gridContainer = document.querySelector('.grid-container');
-    gridContainer.innerHTML = ''; // Limpa os resultados anteriores    
+
+    const listArtists = document.querySelector('.list-artists');
+    listArtists.innerHTML = ''; // Limpa os resultados anteriores    
 
     const filteredArtists = result.filter(artist => artist.name.toLowerCase().includes(searchTerm));
 
@@ -21,18 +22,18 @@ function displayResults(result, searchTerm ) {
         artistCard.classList.add('artist-card');
 
         artistCard.innerHTML = `
-          <div class="card-img">
-              <img class="artist-img" src="${artist.urlImg}" />
-              <div class="play">
-                  <span class="fa fa-solid fa-play"></span>
-              </div>
-          </div>
-      <div class="card-text">              
-              <span class="artist-name">${artist.name}</span>
-              <span class="artist-categorie">Artista</span>
-          </div>
-      `;
-        gridContainer.appendChild(artistCard);
+            <div class="card-img">
+                <img class="artist-img" src="${artist.urlImg}" />
+                <div class="play">
+                    <span class="fa fa-solid fa-play"></span>
+                </div>
+            </div>
+            <div class="card-text">              
+                <span class="artist-name">${artist.name}</span>
+                <span class="artist-categorie">Artista</span>
+            </div>
+        `;
+        listArtists.appendChild(artistCard);
     });
 
     resultsArtists.classList.remove('hidden');
@@ -42,8 +43,8 @@ document.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase().trim();
 
     if (searchTerm === '') {
-        resultPlaylist.classList.remove('hidden');
         resultsArtists.classList.add('hidden');
+        resultPlaylist.classList.remove('hidden');
         return;
     }
 
